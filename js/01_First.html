@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- external js  -->
+    <script src="01_external.js"></script>
+<style>
+    .parth{
+        border: 1px solid red;
+        outline:1px solid red ;
+        outline-offset: 2px;
+    }
+</style>
+</head>
+
+<body>
+    <!-- inline js  -->
+    <button onclick="alert('hi')">Ayush</button>
+    <button onclick="" id="">Ayush</button>
+    <p id="myId" class="myId" onclick="parth()">Ayush</p>
+
+    <script>
+
+
+        document.write("hi");
+        // document.write("<h1>PArth Sukhadiya</h1>");
+        console.log("ayush")
+
+        function parth() {
+            // document.getElementById("myId").innerText = 'Parth';
+            //   document.getElementsByClassName("myId").innerText = 'Parth';
+            //   document.getElementsByTagName("p").innerText = 'Parth';
+
+            // document.querySelector("#myId").innerText = 'Parth';
+            // document.querySelector("#myId").innerText = '<h1>Parth</h1>';
+
+            // document.querySelector("#myId").innerHTML = '<h1>Parth</h1>';
+            document.querySelector("#myId").innerHTML = '<h1>Parth</h1>';
+            document.querySelector("#myId").style.color = 'red';
+            // document.querySelector("#myId").style.display = 'none';
+            document.querySelector("#myId").classList.add('parth') 
+
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>
