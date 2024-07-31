@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button  onclick="height()">height</button>
+    <button   onclick="width()">width</button>
+    <!-- <button onclick="open()">open</button> -->
+
+    <button onclick="close()">close</button>
+    <button onclick="back()">back</button>
+    <button onclick="go()">go</button>
+
+
+    <script>
+    function height(){
+        document.write(window.innerHeight);
+
+        }
+
+        function width(){
+        document.write(window.innerWidth);
+
+        }
+
+        function open(){
+            document.write(windows.open())
+
+        }
+        function close(){
+            document.write(windows.close())
+
+
+
+        }
+
+
+        // backward
+        function back() {
+            window.history.back()
+
+        }
+        function go() {
+            window.history.go(-1)
+        }
+    </script>
+</body>
+</html>
